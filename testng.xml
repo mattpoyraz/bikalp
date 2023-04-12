@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" Thread-count="5">
+    
+    
+    <test name="Loan Department" parallel="classes" Thread-count="4"> 
+     <classes>
+     <class name="test22.bolum">
+     <include name = demo2/>
+     <class/>
+     <class name="test24.bolum"/>
+     <class name="test25.bolum"/>
+     </classes>
+     </test> 
+     
+     <test name "Personal Department">
+     <classes>
+     <class name="test22.bolum3">
+     <methods>
+     <exclude name ="carLoanDepartment"/>
+     <exclude name ="carLoan.*t"/>
+     </methods>
+     <class/>
+     </classes>
+
+     </test>
+</suite> 
